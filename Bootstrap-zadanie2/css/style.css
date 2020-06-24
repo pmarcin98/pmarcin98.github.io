@@ -1,0 +1,35 @@
+.container{
+    margin-top: 10%;
+}
+h3 {
+    color: rgba(128, 128, 128, 0.616);
+    font-weight: 400;
+}
+
+hr {
+    width: 30%;
+}
+
+.accordion {
+    width: 100%;
+
+}
+
+.row {
+
+    width: 1000px;
+}
+
+.card-body {
+    text-align: center;
+}
+
+
+.btn {
+    color: #f88e86;
+    text-align: center;
+}
+
+.btn:hover {
+    color: #8a8a8a;
+}
