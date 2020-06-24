@@ -1,0 +1,40 @@
+h2, h3 {
+    color: rgba(128, 128, 128, 0.918);
+    font-weight: 300;
+}
+h3{
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.fab {
+    font-size: 4em;
+    color: #dd6b0d;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.radius{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(233, 233, 233, 0.507);
+    opacity: 0.8;
+    border-radius: 50%;
+    padding: 30px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+hr{
+    width: 30%;
+}
+
+h2 {
+    margin-top: 10%;
+}
+
+.number {
+    position: absolute;
+    padding-top: 3px;
+}
