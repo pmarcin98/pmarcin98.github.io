@@ -1,0 +1,25 @@
+/***/
+/*==========  5.2 - Dividers  ==========*/
+
+hr {
+    border-color: $color-border;
+    border-width: 1px;
+    width: 150px;
+    margin: $baseline auto;
+}
+
+hr.divider-light-dark {
+    width: 150px;
+    border-color: $color-primary;
+    border-width: 3px;
+}
+
+hr.divider-light {
+    border-color: $color-bg-main;
+    width: 150px;
+    border-width: 3px;
+}
+#counters-services .counters-box hr {
+    opacity: 0.5;
+    width: 25px !important;
+}
