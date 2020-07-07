@@ -1,0 +1,110 @@
+.main-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: #fff;
+    padding: 12px 23px;
+
+    .nav-holder {
+        @include flexbox;
+    }
+    
+    .logo {
+        height: 50px;
+        display: inline-block;
+        
+        img {
+            height: 100%;
+        }
+    }
+
+    %mobile-controls {
+        font-size: 28px;
+        line-height: 50px;
+        cursor: pointer;
+    }
+
+    .hamburger {
+        @extend %mobile-controls;
+        color: $primary-color;
+    }
+
+    .close {
+        @extend %mobile-controls;
+        color: #fff;
+        text-align: right;
+        height: 50px;
+    }
+
+    .open-menu-holder {
+        position: fixed;
+        background-color: $primary-color;
+        top: 0;
+        right: 0;
+        max-width: $extra-small;
+        width: $extra-small ;
+        text-align: right;
+        display: none;
+        padding: 12px 23px;
+
+        &.open {
+            display: block;
+        }
+
+        .menu {
+            list-style: none;
+
+            .menu-item {
+                font-size: 50px;
+                text-transform: uppercase;
+                padding: 20px 0;
+
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    @media all and (min-width: $large) {
+
+        .nav-holder {
+            justify-content: flex-start;
+        }
+
+        .logo {
+            height: 80px;
+        }
+
+        %mobile-controls {
+            display: none;
+        }
+
+        .open-menu-holder {
+            display: block;
+            position: static;
+            background-color: transparent;
+            width: auto;
+            max-width: 100%;
+            padding: 0;
+            align-self: flex-start;
+
+            .menu {
+                background-color: #fff;
+
+                .menu-item {
+                    display: inline-block;
+                    margin: 0 20px;
+                    font-size: initial;
+
+                    a {
+                        color: $secondary-color;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}

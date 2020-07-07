@@ -1,0 +1,57 @@
+.contact {
+    background-color: $primary-color;
+    color: #fff;
+
+    .section-header {
+        color: #fff;
+
+        h2 {
+            color: #fff;
+        }
+    }
+
+    .contact-data {
+        padding: 25px 0;
+        margin-bottom: 30px;
+
+        .contact-item {
+            @include flex-center;
+            text-transform: uppercase;
+
+            .img-holder {
+                height: 15px;
+                width: 15px;
+                margin-right: 15px;
+                text-align: center;
+
+
+                img {
+                    width: 100%;
+                   
+                    
+                }
+            }
+
+            a {
+                color: #fff;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+        }
+
+        @media all and (min-width: $medium) {
+            .contact-item {
+                justify-content: flex-start;
+            }
+        }
+    }
+
+    .contact-form {
+        padding: 25px 0;
+        text-align: center;
+    }
+}
